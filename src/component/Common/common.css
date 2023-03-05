@@ -1,0 +1,32 @@
+.button-container {
+    padding: 10px;
+}
+
+.text-box-container, .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.label-container {
+    text-align: left;
+    margin: 10px 0px;
+}
+.text-box-container label, .dropdown-container label {
+    font-size: small;
+}
+
+.text-box {
+    border: 2px solid #a919a9;
+    border-radius: 4px;
+    height: 25px;
+}
+
+.text-box:focus {
+    border: 2px solid #a919a9;
+    border-radius: 4px;
+}
+
+.options-wrapper{
+    text-align: left;
+}

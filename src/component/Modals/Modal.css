@@ -1,0 +1,8 @@
+.signup-modal-container {
+    width: fit-content;
+    background: white;
+    padding: 50px 95px;
+    /* position: absolute; */
+    margin: auto;
+    border: 2px solid #e73d76;
+}

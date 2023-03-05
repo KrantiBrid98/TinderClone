@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "../component/Common/Button";
+import SignUp from "../component/Modals/Signup";
 import Nav from '../component/Nav'
-
+import './CSS/home.css'
 
 const Home = () => {
 
-   const authToken = true;
+   const authToken = false;
+   const [showSignupMpdal, setShowSignup] = useState(false);
 
    const onHandleClick = () => {
-
+      setShowSignup(true);
    }
 
-   return <div>
+   return <div className="home-container">
       <Nav
-      authToken={authToken}
+         authToken={authToken}
       />
       <h2>Swipe right</h2>
-      <button className='primary-button'
-      onClick={onHandleClick}
-      >
-         {authToken ? 'Sign out' : "Create account"}
-         </button>
+      {!showSignupMpdal && <Button
+         label={authToken ? 'Sign out' :   "Create account"}
+         onClick={onHandleClick}
+      />}
+      {
+         showSignupMpdal && <SignUp />
+      }
    </div>
 }
 

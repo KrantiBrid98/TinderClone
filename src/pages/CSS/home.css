@@ -1,0 +1,13 @@
+.home-container {
+    width: 97vw;
+    height: 97vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97vh;
+    background-image: url('../../images/acastro_180822_1777_tinder_0002.jpg');
+}
+
+.home-container h2 {
+    color: white
+}

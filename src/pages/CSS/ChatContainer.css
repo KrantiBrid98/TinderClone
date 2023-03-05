@@ -1,0 +1,12 @@
+.chat-container .tab-button {
+    border: none;
+    border-bottom: 2px solid #a919a9;
+    width: 50%;
+    background: white;
+    font-size: large;
+    padding: 5px;
+}
+
+.selected-button {
+    background-color: #fff1fbf3 !important;
+}
